@@ -1,0 +1,317 @@
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-card: #002F52;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --preto: #000000;
+    --fonte-secundaria: "Josefin Sans";
+    --fonte-principal: "Poppins";
+    --cor-header: #1a2747;
+    --cor-card: #FFA726;
+    --cor-card-text: #333;
+    --cor-card-border: #ccc; 
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--cor-de-fundo); 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .logo {
+    display: flex;
+    align-items: center;
+}
+
+.content .logo img {
+    width: 40px;
+    margin-right: 0.5em;
+}
+
+.content nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.content nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 5em;
+}
+
+.content nav ul li a {
+    color: var(--preto);
+    text-decoration: none;
+    margin: 1em;
+    transition: color 0.5s;
+}
+
+.content nav ul li a:hover {
+    color: var(--laranja);
+}
+
+.banner-images img {
+    width: 30px;
+    margin-left: 1.5em;
+}
+
+.content nav img {
+    cursor: pointer;
+}
+
+.brand {
+    color: var(--preto);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.brand strong {
+    color: #326589;
+}
+
+header {
+    background-color: var(--cor-header);
+    color: #fff;
+    padding: 50px 0;
+    min-height: 100vh;
+}
+
+.header-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-block img {
+    max-width: 100%;
+    height: auto;
+    width: 40em;
+}
+
+.header-block .text {
+    max-width: 600px;
+}
+
+.header-block h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.header-block p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.header-block strong {
+    color: var(--laranja);
+}
+
+.about {
+    background-color: var(--cor-card); 
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    margin: 0 auto 40px;
+    max-width: 800px;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about .card {
+    background-color: var(--branco);
+    color: var(--cor-card-text);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about .card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-card);
+    margin-bottom: 10px;
+}
+
+.about .card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.tittle-wrapper-catalog {
+    text-align: center; 
+    margin: 20px 0; 
+    background-color: var(--branco);
+}
+
+.tittle-wrapper-catalog p {
+    font-size: 1.5rem; 
+    color: var(--azul-card); 
+}
+
+.tittle-wrapper-catalog h3 {
+    font-size: 2.5rem; 
+    color: var(--laranja); 
+    font-weight: 700; 
+}
+
+.filter-card {
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 40px; 
+}
+
+.seatch-input {
+    border: 1px solid var(--azul-card);
+    border-radius: 5px; 
+    width: 300px;
+    transition: border-color 0.3s;
+}
+
+.seatch-input:focus {
+    border-color: var(--laranja); 
+    outline: none; 
+}
+
+.search-button {
+    background-color: var(--laranja); 
+    color: var(--branco); 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-left: 10px; 
+    transition: background-color 0.3s; 
+}
+
+.search-button:hover {
+    background-color: var(--azul-card); 
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-item {
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid var(--azul-card); 
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px; 
+    justify-content: space-between; 
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--azul-card);
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background-color: var(--laranja);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+    text-align: center; 
+}
+
+.buy-button:hover {
+    background-color: var(--azul-card);
+    transform: translateY(-2px); 
+}
+
+.buy-button:active {
+    transform: translateY(0); 
+}   
+.search-button:hover {
+    background-color: var(--azul-card); 
+}
+
+.seatch-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    margin-right: 10px; 
+    transition: border-color 0.3s; 
+}
+
+.seatch-input:focus {
+    border-color: var(--laranja); 
+    outline: none; 
+}
+
+.apresentacao-rodape {
+    padding: 10px;
+    background-color: var(--azul-card);
+    color: var(--branco);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.about, .catalog {
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease, transform 0.6s ease; 
+}
+
+.about.visible, .catalog.visible {
+    opacity: 1; 
+    transform: translateY(0); 
+}
