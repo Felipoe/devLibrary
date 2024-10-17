@@ -73,6 +73,7 @@ body {
     color: var(--preto);
     font-size: 24px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .brand strong {
@@ -108,11 +109,15 @@ header {
 .header-block h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
+    transform: translateX(20px);
+    transition: transform 0.7s;
 }
 
 .header-block p {
     font-size: 1.2rem;
     line-height: 1.6;
+    transform: translateX(20px);
+    transition: transform 0.7s;
 }
 
 .header-block strong {
@@ -296,22 +301,77 @@ header {
     outline: none; 
 }
 
-.apresentacao-rodape {
-    padding: 10px;
-    background-color: var(--azul-card);
-    color: var(--branco);
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
 .about, .catalog {
     opacity: 0; 
     transform: translateY(20px); 
-    transition: opacity 0.6s ease, transform 0.6s ease; 
-}
+    transition: opacity 2s ease, transform 2s ease; 
+}   
 
 .about.visible, .catalog.visible {
     opacity: 1; 
     transform: translateY(0); 
+}
+
+footer {
+    background-color: var(--cor-card); 
+    color: var(--branco); 
+    padding: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2em;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--branco);
+}
+
+.footer-section a,
+.footer-section p {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: var(--laranja); 
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social-icons a {
+    color: var(--branco);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: var(--laranja);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: var(--branco);
 }
