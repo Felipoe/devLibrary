@@ -20,6 +20,10 @@ body {
     background-color: var(--cor-de-fundo); 
 }
 
+a {
+    text-decoration: none;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -29,6 +33,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 
 .content .logo img {
     width: 40px;
@@ -109,15 +114,15 @@ header {
 .header-block h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    transform: translateX(20px);
-    transition: transform 0.7s;
+    transform: translateX(30px);
+    transition: transform 2s;
 }
 
 .header-block p {
     font-size: 1.2rem;
     line-height: 1.6;
-    transform: translateX(20px);
-    transition: transform 0.7s;
+    transform: translateX(30px);
+    transition: transform 2s;
 }
 
 .header-block strong {
@@ -303,7 +308,7 @@ header {
 
 .about, .catalog {
     opacity: 0; 
-    transform: translateY(20px); 
+    transform: translateY(100px); 
     transition: opacity 2s ease, transform 2s ease; 
 }   
 

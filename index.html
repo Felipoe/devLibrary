@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
+    
     <header>
         <div class="content">
             <nav>
@@ -28,7 +29,9 @@
                 </ul>
                 <div class="banner-images">
                     <img class="images-banner" src="img/usuario.png" alt="User Icon">
-                    <img class="images-banner" src="img/carrinho.png" alt="Cart Icon">
+                    <a href="cart.html">
+                        <img class="images-banner" src="img/carrinho.png" alt="Cart Icon">
+                    </a>   
                 </div>
             </nav>
             <div class="header-block">
@@ -205,37 +208,6 @@
     </div>
 </footer>
 
-<script>
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-    const sections = document.querySelectorAll('.about, .catalog');
-
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        hreshold: 0.1
-        };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, options);
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
