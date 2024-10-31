@@ -29,9 +29,17 @@
                 </ul>
                 <div class="banner-images">
                     <img class="images-banner" src="img/usuario.png" alt="User Icon">
-                    <a href="cart.html">
-                        <img class="images-banner" src="img/carrinho.png" alt="Cart Icon">
-                    </a>   
+                    <img class="images-banner" id="cartIcon" src="img/carrinho.png" alt="Cart Icon">
+                </div>
+                <div class="cart-panel" id="cartPanel">
+                    <div class="cart-header">
+                        <h2>Your Cart</h2>
+                        <button class="close-cart" onclick="toggleCart()">X</button>
+                    </div>
+                    <div class="cart-content">
+                    </div>
+                    <p id="totalPrice">Total: R$ 0,00</p>
+                    <button class="checkout-button">Checkout</button>
                 </div>
             </nav>
             <div class="header-block">
@@ -84,7 +92,8 @@
                     <div class="card-content">
                         <h3>Introduction to Git and GitHub</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
-                        <button class="buy-button">Buy it=</button>
+                        <p class="book-price">R$ 29,90</p>
+                        <button class="buy-button">Buy it</button>
                     </div>
                 </div>
                 <div class="card-item">
@@ -92,14 +101,16 @@
                     <div class="card-content">
                         <h3>The Spirit of Python</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 49,90</p>
                         <button class="buy-button">Buy it</button>
                     </div>
                 </div>
                 <div class="card-item">
                     <img class="card-image" src="img/livro3.png" alt="">
                     <div class="card-content">
-                        <h3>Introduction to Git and GitHub</h3>
+                        <h3>Automate the Boring Stuff with Python</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 69,90</p>
                         <button class="buy-button">Buy it</button>
                     </div>
                 </div>
@@ -108,22 +119,25 @@
                     <div class="card-content">
                         <h3>Introduction to Git and GitHub</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 39,90</p>
                         <button class="buy-button">Buy it</button>
                     </div>
                 </div>
                 <div class="card-item">
                     <img class="card-image" src="img/livro3.png" alt="">
                     <div class="card-content">
-                        <h3>Introduction to Git and GitHub</h3>
+                        <h3>Automate the Boring Stuff with Python</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 29,90</p>
                         <button class="buy-button">Buy it</button>
                     </div>
                 </div>
                 <div class="card-item">
                     <img class="card-image" src="img/livro2.png" alt="">
                     <div class="card-content">
-                        <h3>Introduction to Git and GitHub</h3>
+                        <h3>The Spirit of Python</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 29,90</p>
                         <button class="buy-button">Buy it</button>
                     </div>
                 </div>
@@ -132,22 +146,25 @@
                     <div class="card-content">
                         <h3>Introduction to Git and GitHub</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 29,90</p>
                         <button class="buy-button">Buy it</button>
                     </div>
                 </div>
                 <div class="card-item">
                     <img class="card-image" src="img/livro3.png" alt="">
                     <div class="card-content">
-                        <h3>Introduction to Git and GitHub</h3>
+                        <h3>Automate the Boring Stuff with Python</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 29,90</p>
                         <button class="buy-button">Buy it</button>
                     </div>
                 </div>
                 <div class="card-item">
                     <img class="card-image" src="img/livro2.png" alt="">
                     <div class="card-content">
-                        <h3>Introduction to Git and GitHub</h3>
+                        <h3>The Spirit of Python</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 29,90</p>
                         <button class="buy-button">Buy it</button>
                     </div>
                 </div>
@@ -156,14 +173,25 @@
                     <div class="card-content">
                         <h3>Introduction to Git and GitHub</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 29,90</p>
                         <button class="buy-button">Buy it</button>
                     </div>
                 </div>
                 <div class="card-item">
                     <img class="card-image" src="img/livro3.png " alt="">
                     <div class="card-content">
-                        <h3>Introduction to Git and GitHub</h3>
+                        <h3>Automate the Boring Stuff with Python</h3>
                         <p>Lorem ip sum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 29,90</p>
+                        <button class="buy-button">Buy it</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img class="card-image" src="img/card-book.png" alt="">
+                    <div class="card-content">
+                        <h3>Introduction to Git and GitHub</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <Facere class="x"></Facere></p>
+                        <p class="book-price">R$ 29,90</p>
                         <button class="buy-button">Buy it</button>
                     </div>
                 </div>
